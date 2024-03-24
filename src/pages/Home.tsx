@@ -1,4 +1,4 @@
-import "./home.scss";
+/* import "./home.scss";
 import { useEffect, useState } from "react";
 
 type Schedule = {
@@ -30,3 +30,4 @@ const Home = () => {
 };
 
 export default Home;
+ */
