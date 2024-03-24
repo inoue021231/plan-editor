@@ -1,0 +1,38 @@
+.box {
+  background: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+  width: 60%;
+  margin: 20px auto;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #5fc2f5;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 2px solid #fff;
+  }
+
+  &__time {
+    font-size: 1em;
+    color: rgb(224, 224, 224);
+    margin-right: 10px;
+  }
+
+  &__title {
+    flex: 1;
+    font-size: 1.2em;
+    padding: 4px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+
+  &__content {
+    padding: 15px 20px;
+    text-align: center;
+    background: #f1f1f1;
+    border-radius: 0 0 5px 5px;
+  }
+}
