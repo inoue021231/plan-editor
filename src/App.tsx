@@ -1,10 +1,11 @@
-import Home from "./pages/Home.tsx";
+/* import Home from "./pages/Home.tsx"; */
 
 const App = () => {
   return (
-    <>
-      <Home />
-    </>
+    <div>
+      {/* <Home /> */}
+      <h1>HELLO WORLD</h1>
+    </div>
   );
 };
 
