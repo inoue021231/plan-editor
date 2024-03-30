@@ -1,12 +1,7 @@
-/* import Home from "./pages/Home.tsx"; */
+import Home from "./pages/Home";
 
 const App = () => {
-  return (
-    <div>
-      {/* <Home /> */}
-      <h1>HELLO WORLD</h1>
-    </div>
-  );
+  return <Home />;
 };
 
 export default App;

@@ -1,4 +1,4 @@
-import "./home.scss";
+/* import "./home.scss"; */
 import React from "react";
 import { useEffect, useState } from "react";
 
@@ -9,8 +9,19 @@ type Schedule = {
   // place: string;
 };
 
-const Home: React.FC = () => {
+const Home = () => {
   const [schedules, setSchedules] = useState<Schedule>();
+
+  const handleChangeContent = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (schedules !== undefined) {
+      setSchedules({
+        title: schedules.title,
+        content: event.target.value,
+        time: schedules.time,
+      });
+    }
+  };
+
   useEffect(() => {
     setSchedules({
       title: "テスト",
@@ -20,17 +31,22 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="box">
+    <>
       {schedules !== undefined && (
-        <div>
+        <div className="box">
           <div className="box__header">
             <div className="box__time">{schedules.time}</div>
             <div className="box__title">{schedules.title}</div>
           </div>
           <div className="box__content">{schedules.content}</div>
+          <input
+            type="text"
+            onChange={(event) => handleChangeContent(event)}
+            value={schedules.content}
+          ></input>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
